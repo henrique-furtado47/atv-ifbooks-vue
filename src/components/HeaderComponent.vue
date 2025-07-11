@@ -1,5 +1,5 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink } from 'vue-router'
 </script>
 
 <template>
@@ -9,7 +9,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <router-link to="/">
           IFbooks
           <span class="logo-title"> Apreço a livros </span>
-        </router-link>
+        </router-link> 
       </h1>
       <div class="search-wrapper">
         <input type="text" class="search" placeholder="Buscar..." />
@@ -36,6 +36,17 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style scoped>
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  text-decoration: underline;
+  color:rgb(41, 39, 39)
+}
+
 header nav {
   display: flex;
   justify-content: space-between;
